@@ -58,6 +58,10 @@ inputs:
     required: false
     default: ''
     description: 'SCA Password'
+  sca_tenant:
+    required: false
+    default: ''
+    description: 'SCA Tenant'
   params:
     required: false
     default: ''
@@ -86,6 +90,7 @@ runs:
     - ${{ inputs.sca_url }}
     - ${{ inputs.sca_username }}
     - ${{ inputs.sca_password }}
+    - ${{ inputs.sca_tenant }}
   env:
     TEAM: "${{ inputs.team }}"
     PROJECT: ${{ inputs.project }}
@@ -103,6 +108,7 @@ runs:
     SCA_URL: ${{ inputs.sca_url }}
     SCA_USERNAME: ${{ inputs.sca_username }}
     SCA_PASSWORD: ${{ inputs.sca_password }}
+    SCA_TENANT: ${{ inputs.sca_tenant }}
 branding:
   icon: 'check'
   color: 'green'
