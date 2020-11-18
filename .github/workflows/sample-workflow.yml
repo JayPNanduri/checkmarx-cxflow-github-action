@@ -25,7 +25,7 @@ jobs:
     - name: Jprannoyn CxFlow Action
       uses: JayPNanduri/checkmarx-cxflow-github-action@v1.0
       with:
-        project: GithubActionTest
+        project: JayPTestSample
         team: '\CxServer\SP\Checkmarx'
         checkmarx_url: ${{ secrets.CHECKMARX_URL }}
         checkmarx_username: ${{ secrets.CHECKMARX_USERNAME }}
