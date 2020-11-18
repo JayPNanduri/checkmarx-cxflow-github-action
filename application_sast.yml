@@ -40,8 +40,6 @@ github:
   block-merge: true
   error-merge: true
 
-jira:
-
 json:
   file-name-format: "cx.json"
   data-folder: "/tmp"
