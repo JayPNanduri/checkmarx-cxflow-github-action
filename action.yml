@@ -45,7 +45,7 @@ inputs:
   scanners:
     required: true
     default: ''
-    description: 'Type of Scan that has to be performed'
+    description: 'Type of Scans that are needed'
   sca_url:
     required: false
     default: ''
