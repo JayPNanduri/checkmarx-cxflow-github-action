@@ -1,0 +1,25 @@
+
+t
+java:S1488b"^Immediately return this expression instead of assigning it to the temporary variable "result".(‡Á¯¥
+y
+java:S3008"^Rename this field "PLAIN_TEXT_ENCODING" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îš¢ üÿÿÿÿ
+v
+java:S3008"`Rename this field "CIPHER_TRANSFORMATION" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢ºÄ€
+i
+java:S3008"SRename this field "KEY_TYPE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨ºáø
+n
+java:S3008"XRename this field "KEY_SIZE_BITS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½ö³Ò
+U
+java:S4719":Replace Charset.forName() call with StandardCharsets.UTF_8(îš¢ üÿÿÿÿ
+>
+java:S55422"#Use secure mode and padding scheme.(©îØıÿÿÿÿ
+š
+java:S11308"Remove the declaration of thrown exception 'java.security.NoSuchAlgorithmException', as it cannot be thrown from method's body.(ÊÿÜçûÿÿÿÿ
+˜
+java:S11308"}Remove the declaration of thrown exception 'java.io.UnsupportedEncodingException', as it cannot be thrown from method's body.(ÊÿÜçûÿÿÿÿ
+š
+java:S1130f"Remove the declaration of thrown exception 'java.security.NoSuchAlgorithmException', as it cannot be thrown from method's body.(ö»…µşÿÿÿÿ
+—
+java:S1130f"|Remove the declaration of thrown exception 'javax.crypto.NoSuchPaddingException', as it cannot be thrown from method's body.(ö»…µşÿÿÿÿ
+“
+java:S1130r"}Remove the declaration of thrown exception 'java.io.UnsupportedEncodingException', as it cannot be thrown from method's body.(‚íä
