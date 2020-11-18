@@ -42,6 +42,22 @@ inputs:
     required: false
     default: true
     description: 'Incremental Scans?'
+  scanners:
+    required: true
+    default: ''
+    description: 'Type of Scan that has to be performed'
+  sca_url:
+    required: false
+    default: ''
+    description: 'SCA Scan URL'
+  sca_username:
+    required: false
+    default: ''
+    description: 'SCA Username'
+  sca_password:
+    required: false
+    default: ''
+    description: 'SCA Password'
   params:
     required: false
     default: ''
@@ -66,6 +82,10 @@ runs:
     - ${{ inputs.break_build }}
     - ${{ inputs.params }}
     - ${{ inputs.github_token }}
+    - ${{ inputs.scanners }}
+    - ${{ inputs.sca_url }}
+    - ${{ inputs.sca_username }}
+    - ${{ inputs.sca_password }}
   env:
     TEAM: "${{ inputs.team }}"
     PROJECT: ${{ inputs.project }}
@@ -79,6 +99,10 @@ runs:
     CX_FLOW_BREAK_BUILD: ${{ inputs.break_build }}
     CXFLOW_PARAMS: ${{ inputs.params }}
     GITHUB_TOKEN: ${{ inputs.github_token }}
+    SCANNERS: ${{ inputs.scanners }}
+    SCA_URL: ${{ inputs.sca_url }}
+    SCA_USERNAME: ${{ inputs.sca_username }}
+    SCA_PASSWORD: ${{ inputs.sca_password }}
 branding:
   icon: 'check'
   color: 'green'
