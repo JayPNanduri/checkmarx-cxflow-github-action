@@ -23,7 +23,7 @@ jobs:
     - uses: actions/checkout@v2
     # Runs the Checkmarx Scan leveraging the latest version of CxFlow - REFER to Action README for list of inputs
     - name: Jprannoyn CxFlow Action
-      uses: JayPNanduri/checkmarx-cxflow-github-action@v1.1.1
+      uses: JayPNanduri/checkmarx-cxflow-github-action@v1.1.2
       with:
         project: JayPTestSample
         team: '\CxServer\SP\Checkmarx'
