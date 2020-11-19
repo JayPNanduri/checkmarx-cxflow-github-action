@@ -27,14 +27,14 @@ jobs:
       with:
         project: JayPTestSample
         team: '\CxServer\SP\Checkmarx'
-        checkmarx_url: ${{ secrets.CHECKMARX_URL }}
-        checkmarx_username: ${{ secrets.CHECKMARX_USERNAME }}
-        checkmarx_password: ${{ secrets.CHECKMARX_PASSWORD }}
-        checkmarx_client_secret: ${{ secrets.CHECKMARX_CLIENT_SECRET }}
-        sca_url: ${{ secrets.SCA_URL }}
-        sca_username: ${{ secrets.SCA_USERNAME }}
-        sca_password: ${{ secrets.SCA_PASSWORD }}
-        sca_tenant: ${{ secrets.SCA_TENANT }}
+        checkmarx_url: ${{secrets.CHECKMARX_URL}}
+        checkmarx_username: ${{secrets.CHECKMARX_USERNAME}}
+        checkmarx_password: ${{secrets.CHECKMARX_PASSWORD}}
+        checkmarx_client_secret: ${{secrets.CHECKMARX_CLIENT_SECRET}}
+        sca_url: ${{secrets.SCA_URL}}
+        sca_username: ${{secrets.SCA_USERNAME}}
+        sca_password: ${{secrets.SCA_PASSWORD}}
+        sca_tenant: ${{secrets.SCA_TENANT}}
         scanners: sast,sca
 
     # Upload the Report for CodeQL/Security Alerts
