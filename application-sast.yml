@@ -1,68 +1,12 @@
-logging:
-  file:
-    name: cx-flow.log
-
-cx-flow:
-  bug-tracker: Sarif
-  bug-tracker-impl:
-    - CxXml
-    - Json
-    - GitHub
-    - Csv
-    - Sarif
-  filter-severity:
-    - High
-    - Medium
-    - Low
-  mitre-url: https://cwe.mitre.org/data/definitions/%s.html
-  zip-exclude: ""
-  break-build: false
-  enabled-vulnerability-scanners:
-    #- sca
-    - sast
-
 checkmarx:
-  base-url: ${CHECKMARX_BASE_URL}
-  url: ${CHECKMARX_BASE_URL}/cxrestapi
-  scan-preset: Checkmarx Default
-  configuration: Default Configuration
-  team: \CxServer\SP\Company
+  version: 8.9
+  username: ${checkmarx_username}
+  password: ${checkmarx_password}
+  client-secret: ${checkmarx_client_secret}
+  base-url: ${checkmarx_url}
+  #team: Champions
+  team: ${team}
+  url: ${checkmarx.base-url}/cxrestapi
+  portal-url: ${checkmarx.base-url}/cxwebinterface/Portal/CxWebService.asmx
   scan-timeout: 120
-  portal-url: ${CHECKMARX_BASE_URL}/cxwebinterface/Portal/CxWebService.asmx
-  #project-script: ./CxProject.groovy
-  #team-script: ./CxTeam.groovy
-  #exclude-files:
-  #exclude-folders:
-
-github:
-  url: https://github.com
-  api-url: https://api.github.com/repos/
-  block-merge: true
-  error-merge: true
-
-json:
-  file-name-format: "cx.json"
-  data-folder: "/tmp"
-
-cx-xml:
-  file-name-format: "cx.xml"
-  data-folder: "/tmp"
-
-csv:
-  file-name-format: "cx.csv"
-  data-folder: "/tmp"
-  include-header: true
-  fields:
-    - header: Application
-      name: application
-      default-value: unknown
-    - header: file
-      name: filename
-    - header: Vulnerability Name
-      name: category
-    - header: CWE
-      name: cwe
-    - header: Severity
-      name: severity
-    - header: Similarity ID
-      name: similarity-id
+  incremental: true

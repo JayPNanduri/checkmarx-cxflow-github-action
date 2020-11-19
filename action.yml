@@ -92,7 +92,7 @@ runs:
     - ${{ inputs.sca_password }}
     - ${{ inputs.sca_tenant }}
   env:
-    TEAM: "${{ inputs.team }}"
+    TEAM: ${{ inputs.team }}
     PROJECT: ${{ inputs.project }}
     APP: ${{ inputs.app }}
     CHECKMARX_USERNAME: ${{ inputs.checkmarx_username }}
