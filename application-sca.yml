@@ -69,9 +69,9 @@ csv:
       name: similarity-id
 
 sca:
-  appUrl: https://xxxxx
-  apiUrl: https://xxxxx
-  accessControlUrl: https://xxxxx
-  tenant: xxxxx
-  username: xxxxx
-  password: xxxxx
+  appUrl: ${sca_url}
+  apiUrl: https://api.scacheckmarx.com
+  accessControlUrl: https://platform.checkmarx.net
+  tenant: ${sca_tenant}
+  username: ${sca_username}
+  password: ${sca_password}
